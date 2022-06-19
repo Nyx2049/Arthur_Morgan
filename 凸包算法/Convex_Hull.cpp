@@ -79,8 +79,10 @@ void getConvexHull_1_0(std::vector<Point> &pts, std::vector<Point> &edgePts)
             {
                 justice.push_back(PointEquation_1_0(k, b, pt));
             }
-            std::cout << "getAver(justice):" << getAver(justice) << std::endl;
-            if ((getAver(justice) == 0) || (getAver(justice) == 1))
+            double value = getAver(justice);
+            std::cout << "value:" << value << std::endl;
+            if ((value == 0) || (value == 1))
+            // if (getAver(justice) == 0|| (getAver(justice) == 1)) //为什么结果不同 和上一句
             {
                 //std::cout << "getAver(justice):" << getAver(justice) << std::endl;
                 rightEdge = true;

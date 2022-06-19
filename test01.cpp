@@ -47,7 +47,7 @@ void base2()
         v2.push_back(i+10);
         v3.push_back(i+20);
         v4.push_back(i+30);
-        v5.push_back(i+40);
+        v5.push_back(i+40)
         v6.push_back(i+50);
         v7.push_back(i+60);
         v8.push_back(i+70);
