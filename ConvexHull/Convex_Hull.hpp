@@ -199,7 +199,7 @@ void test02()
     Point p10 = std::make_pair(0.5, 0.5);
 
     std::vector<Point> pts, edgePts;
-    pts = {p1, p2, p3, p4, p5, p5, p6, p7, p8, p1, p7, p8, p9, p10};
+    // pts = {p1, p2, p3, p4, p5, p5, p6, p7, p8, p1, p7, p8, p9, p10};
     getConvexHull_1_0(pts, edgePts);
     std::cout << "edgePts.size():" << edgePts.size() << std::endl;
     int a = 1;
@@ -223,7 +223,7 @@ void test04()
     Point p8 = std::make_pair(50, 100);
 
     std::vector<Point> pts, edgePts;
-    pts = {p1, p2, p3, p4, p5, p5, p6, p7, p8};
+    pts.push_back(p1);
     getConvexHull_1_0(pts, edgePts);
     std::cout << "edgePts.size():" << edgePts.size() << std::endl;
     int a = 1;
