@@ -2,8 +2,12 @@
 #include "algorithm/recursion.hpp"
 #include "algorithm/QuikySort.hpp"
 int main()
-{
-    runQuickSortMy();
+{   
+    test_quikySort_mine();
+    // testInsert();
+    //testSwap();
+    // testint();
+    // runQuickSortMy();
     //testInt();
     return 0;
 }

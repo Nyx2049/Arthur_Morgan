@@ -111,3 +111,105 @@ void testInt()
         cout << a[i] << ", ";
     return;
 }
+template <class T>
+//两数交换
+void swapMine(T &a, T&b)
+{
+    T c;
+    c = a;
+    a = b;
+    b = c;
+}
+//打印数组
+void printList(vector<int> list)
+{
+    int i = 0;
+    while (i < list.size())
+    {
+        std::cout << list[i] << " ";
+        i++;
+    }
+    std::cout << "     " << std::endl;
+}
+//把j位置的数，插入到i的前面，同时保证插入位置的数，依然在哪里。
+void insertMine(vector<int> &list, const bool& a, int i, int j)
+{   
+    if (a && i < j)
+    {   
+        int povit = list[i];
+        list[i] = list[j];
+        for (int n = j; n > i+1; n--)
+        {
+            list[n] = list[n-1];
+        }
+        list[i+1] = povit;
+    }
+    else if (a == 0&& i > j)
+    {
+        int povit = list[i];
+        list[i] = list[j];
+        for (int n = j; n < i - 1; n++)
+        {
+            list[n] = list[n+1];
+        }
+        list[i-1] = povit;
+    }
+}
+
+void testInsert()
+{
+    vector<int> a = {1, 4, 6, 0, 98, 73, -4};
+    printList(a);
+    insertMine(a, true, 0, 7);
+    printList(a);
+}
+
+
+
+void testSwap()
+{
+    double a = 100;
+    double b = -100;
+    cout << "before swap:";
+    std::cout << "a : " << a << " b: " << b << std::endl;
+    swapMine(a, b);
+    cout << "after swap:";
+    std::cout << "a : " << a << " b: " << b << std::endl;
+} 
+void quikySort_mine(vector<int> *list)
+{   
+    for (int i = 0; i < list->size(); i++)
+    {
+        for (int j = 0; j < list->size(); j++)
+        {
+            if (i < j && (*list)[i] > (*list)[j])
+            {
+                int g = 10;
+                insertMine(*list, true, i, j);
+            }
+            else if (j < i && (*list)[i] < (*list)[j])
+            {
+                insertMine(*list, false, i, j);
+            }
+        }
+    }
+}
+void test_quikySort_mine()
+{
+    vector<int> a = {1, 0, 9, 81, -4, 5, 198237, -12313, 0, 1, 2, 9, 0};
+    printList(a);
+    quikySort_mine(&a);
+    printList(a);
+}
+
+void testlist()
+{
+    int a = 0;
+    int b[3] = {0 ,4, -4};
+    std::cout << b[a] << std::endl;
+    a--;
+    std::cout << a << std::endl;
+    b[a] = 100;
+    std::cout << a << std::endl;
+    std::cout << b[a] <<"  " << b[0] << "  " << b[2] << std::endl;
+}
