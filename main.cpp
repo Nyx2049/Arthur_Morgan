@@ -3,6 +3,7 @@
 #include "algorithm/QuikySort.hpp"
 int main()
 {
-    runQuikySort();
+    runQuickSortMy();
+    //testInt();
     return 0;
 }
