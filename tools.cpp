@@ -2,12 +2,13 @@
 #define TOOLS_CPP
 #include <array>
 #include <iostream>
-
+#include <sstream>
 #include <string>
 #include <sys/syslimits.h>
 #include <vector>
 
 
+// using namespace std;
 template <typename T>
 
 void duplicateRemoval(std::vector<T> &array) {
@@ -28,6 +29,27 @@ template <typename F>
     std::cout << (std::to_string(a))<< ": " << it << std::endl;
     a++;
   }
+}
+
+
+std::vector<std::string> split(const std::string &strOri, const char &b)
+{
+    std::vector<std::string> strs;
+    std::string str;
+    std::istringstream istr(strOri);
+    while (std::getline(istr, str, b))
+    {
+        strs.emplace_back(str);
+    }
+    return strs;
+}
+
+void testSplit()
+{
+    std::string b = "1,2,3 adskjads dad Lucy&David";
+    std::vector<std::string> a = split(b, ' ');
+    for (std::string i : a)
+        printf("%s\n", i.c_str());
 }
 
 void testDuplicateRemoval() {
