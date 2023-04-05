@@ -12,6 +12,8 @@
 #include <cmath>
 #include <map>
 #include <thread>
+#include <list>
+#include "unistd.h"
 
 #endif
 

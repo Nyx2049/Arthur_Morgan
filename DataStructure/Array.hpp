@@ -6,6 +6,7 @@
 #include <cmath>
 #include <sys/_types/_size_t.h>
 #include <vector>
+#include <thread>
 
 template <typename T>
 
@@ -32,15 +33,14 @@ public:
     size_t findValue(const T& value);
     inline T operator[](const size_t& index);
     inline const T operator[](const size_t& index) const;
-    void operator()() const
-    {
-        printf("该数组正在被调用\n");
-    }
+    void operator()() const;
     Array();
-    Array(T* ptrData, const size_t& size, const size_t& capacity);
-    Array(const Array<T> &array);
+    Array(size_t& capacity);
+    Array(const Array &array);
     ~Array();
 };
 void testArray001();
+//用可调用对象的方法
+void ClassThreadStudy();
 
 #endif

@@ -1,0 +1,15 @@
+# ninja log v5
+0	29	0	CMakeFiles/untitled_autogen	590c70c613bf33a
+0	29	0	untitled_autogen/mocs_compilation.cpp	590c70c613bf33a
+0	29	0	/Users/skywalker/Desktop/code/Arthur_Morgan/多态/untitled/cmake-build-debug/CMakeFiles/untitled_autogen	590c70c613bf33a
+0	29	0	/Users/skywalker/Desktop/code/Arthur_Morgan/多态/untitled/cmake-build-debug/untitled_autogen/mocs_compilation.cpp	590c70c613bf33a
+29	51	1680414490213127748	CMakeFiles/untitled.dir/untitled_autogen/mocs_compilation.cpp.o	def4b091d197c4d9
+30	471	1680414490631563950	CMakeFiles/untitled.dir/main.cpp.o	91a39ef82ac3082a
+1	10	0	CMakeFiles/untitled_autogen	590c70c613bf33a
+1	10	0	untitled_autogen/mocs_compilation.cpp	590c70c613bf33a
+1	10	0	/Users/skywalker/Desktop/code/Arthur_Morgan/多态/untitled/cmake-build-debug/CMakeFiles/untitled_autogen	590c70c613bf33a
+1	10	0	/Users/skywalker/Desktop/code/Arthur_Morgan/多态/untitled/cmake-build-debug/untitled_autogen/mocs_compilation.cpp	590c70c613bf33a
+5	14	0	CMakeFiles/untitled_autogen	590c70c613bf33a
+5	14	0	untitled_autogen/mocs_compilation.cpp	590c70c613bf33a
+5	14	0	/Users/skywalker/Desktop/code/Arthur_Morgan/多态/untitled/cmake-build-debug/CMakeFiles/untitled_autogen	590c70c613bf33a
+5	14	0	/Users/skywalker/Desktop/code/Arthur_Morgan/多态/untitled/cmake-build-debug/untitled_autogen/mocs_compilation.cpp	590c70c613bf33a

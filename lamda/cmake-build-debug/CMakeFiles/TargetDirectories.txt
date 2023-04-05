@@ -1,0 +1,3 @@
+/Users/skywalker/Desktop/code/Arthur_Morgan/lamda/cmake-build-debug/CMakeFiles/lamda.dir
+/Users/skywalker/Desktop/code/Arthur_Morgan/lamda/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/skywalker/Desktop/code/Arthur_Morgan/lamda/cmake-build-debug/CMakeFiles/rebuild_cache.dir

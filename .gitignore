@@ -2,3 +2,6 @@
 build/
 build.log
 .vscode
+.exe
+.xml
+.log

@@ -1,4 +1,5 @@
 #include "Array.hpp"
+#include <sys/_types/_size_t.h>
 
 // template <typename T>
 // void Array<T>::Insert(const size_t &location, T value) {}
@@ -47,6 +48,18 @@ template <typename T>
 inline const T Array<T>::operator[](const size_t &index) const {
   return m_ptrData[index];
 }
+template <typename T>
+  void  Array<T>::operator()() const
+  {
+    printf("该数组正在被调用\n");
+  std::cout << "m_capacity1: "<<  m_capacity << std::endl;
+   std::cout << "m_capacity2: "<<  m_capacity << std::endl;
+    std::cout << "m_capacity3: "<<  m_capacity << std::endl;
+     std::cout << "m_capacity4: "<<  m_capacity << std::endl;
+      std::cout << "m_capacity5: "<<  m_capacity << std::endl;
+       std::cout << "m_capacity6: "<<  m_capacity << std::endl;
+     printf("该数组调用完成\n");
+  }
 
 // template <typename T> 
 // void Array<T>::operator()() const
@@ -79,8 +92,6 @@ template <typename T> void Array<T>::Insert(const size_t &location, T value) {
   m_size++;
 }
 
-
-
 template <typename T>
 Array<T>::Array() {
   m_ptrData = nullptr;
@@ -88,15 +99,15 @@ Array<T>::Array() {
   printf("默认无参构造函数的调用完成\n");
 }
 template <typename T> 
- Array<T>::Array(T* ptrData, const size_t& size, const size_t& capacity)
+ Array<T>::Array(size_t& capacity)
  {
-    m_ptrData = ptrData;
-    m_size = size;
     m_capacity = capacity;
+     m_ptrData = new T[sizeof(T) * capacity];
+    m_size = 0;
     printf("有参构造函数的调用完成\n");
  }
 template <typename T> 
-Array<T>::Array(const Array<T> &array)
+Array<T>::Array(const Array &array)
 {
   this->m_ptrData = array.m_ptrData;
   this->m_size = array.m_size;
@@ -110,12 +121,31 @@ template <typename T> Array<T>::~Array() {
   }
   printf("析构函数的调用完成\n");
 }
+//用其他的方法实现多线程，比如可调用的对象。
+void ClassThreadStudy()
+{   
+    printf("主线程开始\n");
+    for(int i = 0; i < 1; i++)
+    {
+        printf("主线程运行中\n");
+    }
+    size_t i = 10;
+    Array<double> Az(i);
+    std::thread thr2(Az); //此处这个Az是被复制到了这个子线程中，所以使用detach也不会有问题，但是引用和指针不行
+    thr2.join();
+    printf("主线程结束\n");
+    return;
+}
 void testArray001() {
 
   // size_t aa = 3;
   // aa = ceil(aa / 2);
   // int b = 3;
   // b = ceil(b / 2);
+  Array<double> aaa;
+  double gg = 10.7;
+  aaa.PushBack(std::move(gg));
+  aaa.Print();
   Array<double> a;
   int c = 2;
   for (int i = 0; i < c; i++) {

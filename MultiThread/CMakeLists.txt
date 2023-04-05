@@ -1,0 +1,2 @@
+SET(THREAD_SRC CXXThread.cpp SingleObj.cpp)
+ADD_LIBRARY(thread SHARED ${THREAD_SRC})
