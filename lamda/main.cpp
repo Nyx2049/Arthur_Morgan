@@ -1,6 +1,7 @@
 #include <iostream>
-
+#include "stu.h"
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+	Lamda::lamdatest();
+    std::cout << "Hello, World! 666" << std::endl;
     return 0;
 }
