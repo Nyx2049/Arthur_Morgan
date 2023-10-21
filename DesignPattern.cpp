@@ -5,7 +5,7 @@
 #ifndef CATHCHWIND_DESIGNPATTERN_H
 #define CATHCHWIND_DESIGNPATTERN_H
 
-#include "CuriouslyRecurringTemplatePattern.h"
+#include "DesignPattern/CuriouslyRecurringTemplatePattern.h"
 int main()
 {
     CuriouslyRecurringTemplatePattern::testCRTP();

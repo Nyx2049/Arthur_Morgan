@@ -1,1 +1,0 @@
-CMakeLists.txt not found in /Users/skywalker/Desktop/code/Arthur_Morgan/QT Select CMakeLists.txt

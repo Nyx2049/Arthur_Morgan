@@ -1,4 +1,0 @@
-/Users/skywalker/Desktop/code/Arthur_Morgan/多态/untitled/cmake-build-debug/CMakeFiles/untitled.dir
-/Users/skywalker/Desktop/code/Arthur_Morgan/多态/untitled/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/skywalker/Desktop/code/Arthur_Morgan/多态/untitled/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/skywalker/Desktop/code/Arthur_Morgan/多态/untitled/cmake-build-debug/CMakeFiles/untitled_autogen.dir
