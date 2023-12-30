@@ -13,7 +13,7 @@ find_package(Qt6 COMPONENTS
         Widgets
         REQUIRED)
 
-add_executable(ColorPanelWidget main.cpp)
+add_executable(ColorPanelWidget main.cpp colorpanel.cpp)
 target_link_libraries(ColorPanelWidget
         Qt::Core
         Qt::Gui
